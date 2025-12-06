@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAASCO - Prism Solar</title>
+    <style>
+        /* Body and background */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://img.freepik.com/premium-photo/solar-panel-cell-dramatic-sunset-sky-background-clean-alternative-power-energy-concept_29332-2352.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Overlay for opacity */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% opacity overlay */
+            z-index: 0;
+        }
+
+        /* Glass frame container */
+        .glass-frame {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Logo */
+        .logo {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Dark Green Button */
+        .btn-green {
+            background-color: #006400;
+        }
+        .btn-green:hover {
+            background-color: #004d00;
+        }
+
+        /* Blue Button */
+        .btn-blue {
+            background-color: #007BFF;
+        }
+        .btn-blue:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-frame">
+        <!-- Replace 'logo.png' with your actual logo file -->
+        <img src="logo.png" alt="NAASCO Logo" class="logo">
+
+        <!-- Dark Green Button -->
+        <a href="https://cell.phoenixsolar.io/create-contact?RepEmail=khalid.solarpros@gmail.com&Partner=Musk%20Group" target="_blank" class="btn btn-green">
+            Prism Solar - Free DC
+        </a>
+
+        <!-- Blue Button -->
+        <a href="https://meet.jit.si/NAASCOTEAMMEETING" target="_blank" class="btn btn-blue">
+            TEAM MEETING
+        </a>
+    </div>
+</body>
+</html>
